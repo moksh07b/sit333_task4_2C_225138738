@@ -111,8 +111,8 @@ public class LoginFormTest
 	}
 	
 	@Test
-	public void testFailCorrectEmailCorrectPass() {
-		performLogin("mokshbansal07@gmail.com", "Moksh070!");
+	public void testPassCorrectEmailCorrectPass() {
+		performLogin("mokshbansal07@gmail.com", "");
 		sleep(4);
 		Assert.assertFalse(driver.getCurrentUrl().contains("login"));
 	}
